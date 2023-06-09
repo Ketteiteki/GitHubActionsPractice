@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "testenv ${{ env.TEST_ENV }}"
-      - run: echo "testenv ${{ $TEST_ENV }}"
+      - run: echo "testenv $TEST_ENV"
       - run: echo "secret ${{ secrets.SUPER_SECRET }}"
       - run: echo "secret $SUPER_SECRET"
         env: 
