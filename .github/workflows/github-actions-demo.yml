@@ -5,7 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "testenv ${{ env.TEST_ENV }}"
+      - run: echo "testenv ${{ vars.TEST_ENV }}"
       - run: echo "testenv $TEST_ENV"
       - run: echo "secret ${{ secrets.SUPER_SECRET }}"
       - run: echo "secret $SUPER_SECRET"
